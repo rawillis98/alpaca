@@ -5,6 +5,8 @@ Link to paper with original strategy: https://papers.ssrn.com/sol3/papers.cfm?ab
 
 Strategy: check if wood outperformed gold by comparing returns over a certain period (see fs variable in main.py for pandas resampling frequency). If wood outperformed gold, the market should theoretically perform well over the next period; if gold outperformed wood, the market might drop over the next period. Buy and sell a leveraged S&P 500 ETF accordingly.
 
+main.py sends pushbullet notifications each time it runs to tell the owner if it bought, sold, or if it wasn't time to rebalance yet
+
 main.py is scheduled with crontab to run on an Ubuntu free tier Google Cloud Platform server 
 
 helper.py contains helper functions such as a function to push a pushbullet notification about what the program did
